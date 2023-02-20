@@ -1,8 +1,6 @@
 # Generative Adversarial Network
 Building a GAN trained on the CIFAR-10 dataset for image generation
 
-Generative Multimedia Coding Assignment Writeup
-
 For this project, I used standard Python libraries and Tensorflow (Keras) to build a GAN model to generate realistic images that look similar to the data the model was trained on. I trained the model on the CIFAR-10 public dataset (50k training and 10k test images of 32x32 size in 10 classes). 
 
 The approach was to begin with a defining a generator and a discriminator model, and subsequently stacking them to create a GAN. The discriminator’s job is to take in a 32x32x3 image (RGB) and outputting a label to predict if the image was real (1) or fake (0). This model consisted of 4 convolutional layers and 3 max pooling layers interspersed for downsampling. A final dense layer was added with dropout (to prevent overfitting) and sigmoid activation for binary classification. LeakyReLU was used as the activation function through the convolutional layers, which has been proven as a highly performing function for discriminator models. The final model was Adam-optimized and compiled with a binary crossentropy loss since this, again, was a binary classification task. 
