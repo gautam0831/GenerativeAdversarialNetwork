@@ -1,4 +1,4 @@
-# GenerativeAdversarialNetwork
+# Generative Adversarial Network
 Building a GAN trained on the CIFAR-10 dataset for image generation
 
 Generative Multimedia Coding Assignment Writeup
